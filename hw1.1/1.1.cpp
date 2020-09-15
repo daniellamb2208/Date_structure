@@ -2,7 +2,7 @@
 #include<iomanip>
 using namespace std;
 
-//	Author		¸­¬P¦ö B073040031
+//	Author		Â¸Â­Â¬PÂ¦Ã¶ B073040031
 //	Date		2019/9/21
 //	Purpose		Magic Square	
 
@@ -10,7 +10,8 @@ void magicsquare(int n)			//make ms and show it
 {								//n is given 
 	cout<<"This is "<<n<<"x"<<n<<" magic square"<<endl;
  
-	int ma[n][n];				//declare an 2 dimension array with given number n
+	int** ma = alloca(m*n*sizeof(int));				//declare an 2 dimension array with given number n
+	
 	for(int i=0;i<n;i++)		//initialization
 	{
 		for(int j=0;j<n;j++)	
